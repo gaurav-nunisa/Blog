@@ -1,0 +1,1 @@
+req.user._id in the "/" blogCreate is undefined 
