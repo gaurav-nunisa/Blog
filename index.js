@@ -30,3 +30,5 @@ app.use("/user", userSignRoute)
 app.use("/blog", blogRoute)
 
 app.listen(port, () => console.log(`Server running on port ${port}`))
+
+

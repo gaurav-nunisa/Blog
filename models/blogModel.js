@@ -11,10 +11,11 @@ const BlogSchema = new Schema({
 
     },
     createdBy : {
-        type : Schema.Types.ObjectId,
+        type : String,
         ref : "user",
+        required : true
     },
-    profileImageURL:{
+    coverImageURL:{
         type : String,
         required : false
     }

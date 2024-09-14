@@ -34,7 +34,7 @@ router.post("/signup", async (req, res)=>{
         fullname, 
 
     })
-    return res.redirect("/")
+    return res.redirect("/signin")
 
     
 })
