@@ -27,14 +27,23 @@ router.get("/signup", (req, res)=>{
     return res.render("signup")
 })
 router.post("/signup", async (req, res)=>{
-    const{fullname, email, password} = req.body
+    const {fullname, email, password} = req.body
+
+    const existingUser = await USER.findOne({email, fullname})
+    if(existingUser){
+        return res.render("signup", {message : "Account already exists"})
+    }
+
+    
     await USER.create({
         email,
         password,
-        fullname, 
+        fullname,
 
     })
-    return res.redirect("/signin")
+   
+
+    return res.render("signin", {message : "Account created successfully, Please login"})
 
     
 })

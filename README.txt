@@ -1,5 +1,4 @@
-req.user._id in the "/" blogCreate is undefined 
-- clash between profileURL and coverImageURL
+
 
 
 
@@ -15,4 +14,6 @@ PROBLEMS
 
 
 --add features = if user.delete, blog also delete
+-pfp upload feature
+
 
