@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken")
-const { idText } = require("typescript")
 const secret = '123'
 
 function createTokenForUser(user){
